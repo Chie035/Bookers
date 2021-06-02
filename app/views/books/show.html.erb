@@ -1,0 +1,21 @@
+<div class="message-box">
+<p class="success">
+    <%= flash[:success]%>
+</p>
+</div>
+
+<p class="show-visual">
+  <strong>Title:</strong>
+  <%= @book.title %>
+  </p>
+
+<p class="show-visual">
+  <strong>Body:</strong>
+  <%= @book.body %>
+</p>
+
+<div class="btns">
+ <%= link_to "Edit",edit_book_path %>
+ <p>|</p>
+ <%= link_to "Back",books_path %>
+</div>
